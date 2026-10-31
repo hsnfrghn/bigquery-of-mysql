@@ -1,0 +1,40 @@
+# Python / uv
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Generated data (regenerate with `make data`)
+data/
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+dbt/profiles.yml
+logs/
+
+# Terraform: state and real variable values never get committed
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+
+# Secrets
+.env
+*.json.key
+*service-account*.json
+credentials*.json
+
+# Airflow local runtime
+airflow/logs/
+airflow/airflow.db
+airflow/standalone_admin_password.txt
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
